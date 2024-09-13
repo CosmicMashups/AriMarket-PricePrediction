@@ -1,0 +1,39 @@
+ARIMA MODEL: PARAMETERS
+RICE 
+Regular-Milled Rice:	5, 0, 5
+Well-Milled Rice:	2, 0, 2
+Premium Rice:		9, 0, 9
+Special Rice:		2, 0, 2
+
+MEAT
+Beef Brisket:		3, 1, 3
+Beef Rump:		9, 0, 9
+Whole Chicken:		3, 1, 7
+Pork Belly:		4, 1, 5
+Pork Ham:		2, 1, 5
+
+FISH
+Alumahan:		3, 1, 6
+Bangus:			5, 1, 5
+Galunggong:		3, 1, 5
+Tilapia:		1, 0, 1
+
+FRUITS
+Banana (Lakatan):	3, 1, 3
+Banana (Latundan):	1, 1, 1
+Calamansi: 		3, 1, 9
+Mango:			4, 1, 7
+Papaya:			0, 0, 0
+
+VEGETABLES
+Ampalaya: 		1, 1, 4
+Baguio Beans: 		2, 1, 6
+Cabbage: 		1, 1, 16
+Carrots: 		2, 1, 9
+Sayote: 		3, 1, 7
+Eggplant: 		2, 1, 5
+Pechay: 		2, 1, 6
+Sitao:	 		3, 1, 4
+Squash:			10, 1, 7
+Tomato: 		12, 1, 9
+Potato: 		19, 1, 5
