@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebAPP Name</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body style="background-color:#203555;">
+    <header>
+        <br>
+        <br>
+        <div class="search-bar">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <ul id="search-suggestions"></ul>
+            </div>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div> 
+            <h1>MYSTIC MARKET</h1>
+            
+       
+        
+    </header>
+
+  
+    
+    <nav>
+        Testing (Nav Bar)
+    </nav>
+    
+    <main>
+        <h2> &#9670; BASIC LOCAL COMMODITIES</h2>
+       
+        <ul class="price-list">
+            <li>Rice - ₱69.00</li>
+            <li>Vegetables - ₱69.00</li>
+            <li>Meats - ₱69.00
+              <ul class="details">
+                <li>Pork - ₱69.00</li>
+                <li>Chicken - ₱69.00</li>
+                <li>Beef - ₱69.00</li>
+              </ul>
+            </li>
+            <li>Fish - ₱69.00</li>
+            <li>Fruits - ₱69.00</li>
+            <li>More Commodities...</li>
+          </ul>
+          <script>
+            const priceList = document.querySelector('.price-list');
+        
+            priceList.addEventListener('click', (event) => {
+              const target = event.target;
+              if (target.tagName === 'LI') {
+                const activeItem = priceList.querySelector('.active');
+                if (activeItem && activeItem !== target) {
+                  activeItem.classList.remove('active');
+                }
+                target.classList.toggle('active');
+              }
+            });
+          </script>
+        
+        <p><center>Note. This is just a test </p></center>
+    </main>
+    <script src="search.js"></script>
+    <footer>
+        &copy; 2024 All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
