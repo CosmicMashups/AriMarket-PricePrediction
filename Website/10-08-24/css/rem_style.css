@@ -1,0 +1,282 @@
+/* Fonts */
+@import url(
+  'https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;700'
+);
+
+@import url(
+  'https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap'
+);
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('fonts/LemonMilk.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Body */
+body {
+  font-family: 'Fredoka';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 0.33rem; /* Base font size */
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
+  z-index: 50;
+  background-color: #2C2C2C;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'LemonMilk', sans-serif;
+  font-size: 2rem;
+  color: #DAA520;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  margin-top: 4.5rem; /* Adjusted from 10vh */
+  background-color: rgb(100, 100, 100);
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 50;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.25rem; /* Adjusted from 2% */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #191970;
+  color: #f0f0f0;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+}
+
+.left_greeting {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.greeting {
+  font-family: 'Abril Fatface';
+  font-size: 2.25rem; /* Adjusted from 2.5vw */
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 10rem;
+}
+
+/* Displaying current date and time */
+.date-time {
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  margin-top: 1rem; /* Adjusted from 0.75% */
+  font-size: 1.5rem; /* Adjusted from 1.75vw */
+  color: white;
+  font-family: 'Abril Fatface';
+}
+
+/* Background animation */
+.container {
+  padding-top: 5rem; /* Adjusted from 6vw */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #0A1536, #0D1A4C, #2E0062, #250052);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Price List */
+.price-list {
+  margin-top: 16vh;
+  background-color: #425679;
+  padding: 0;
+  width: 100%;
+  font-size: 1.33rem; /* Adjusted from 1.5vw */
+  color: #dae7ed;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.price-list li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #516689;
+  /* margin: 0.25rem 0; */
+}
+
+.price-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem; /* Adjusted from 5px */
+}
+
+.price-list ul li {
+  margin-right: 0.5rem; /* Adjusted from 2% */
+}
+
+.price-list ul li a {
+  text-decoration: none;
+  color: #dae7ed;
+}
+
+.price-list ul li a:hover {
+  background-color: #86a8ff;
+  color: #f0f0f02e;
+}
+
+/* Price List: Item List */
+.list-logo {
+  flex: 0 0 auto;
+  margin-left: 1rem; /* Adjusted from 1% */
+  margin-right: 1rem; /* Adjusted from 2% */
+}
+
+.commodity-logo {
+  max-width: 3.5rem; /* Adjusted from 4vw */
+  height: auto;
+}
+
+.commodity-name {
+  flex: 0;
+}
+
+.dot-leaders {
+  flex: 1;
+  border-bottom: 0.33rem dotted #dae7ed; /* Adjusted from 0.33vw */
+  margin: 0 2rem; /* Adjusted from 2.5vw */
+}
+
+.commodity-price {
+  flex: 0 0 auto;
+  margin-left: 0.5rem; /* Adjusted from 5px */
+}
+
+/* Price List: Under the commodity groups */
+.price-list li {
+  cursor: pointer;
+  padding: 1rem; /* Adjusted from 10px */
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.price-list li.active {
+  background-color: #516689;
+  font-weight: bold;
+}
+
+.price-list li.active.details {
+  display: block;
+}
+
+.details {
+  display: none;
+  padding: 1rem; /* Adjusted from 10px */
+  margin-left: 2rem; /* Adjusted from 20px */
+}
+
+.details li {
+  padding-left: 0.5rem;
+}
+
+/* Price List: Animation */
+.price-list li {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Shadow changes when hovering over the list items */
+.price-list li:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  position: absolute;
+  right: 2rem;
+  align-items: center;
+  z-index: 50;
+  margin-top: -.25rem;
+}
+
+#search-input {
+  color: white;
+  background-color: #516689;
+  padding: 1rem;
+  border: 1px solid #516689;
+  border-radius: 1rem;
+  height: 1rem;
+  width: 12.5rem;
+}
+
+#search-input::placeholder {
+  color: white;
+}
+
+/* Prevent text from overflowing */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10rem;
+  }
