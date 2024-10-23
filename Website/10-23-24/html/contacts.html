@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | AriMarket</title>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">    
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <div id='container'>
+                
+        <!-- Navigation Pane -->
+        <div id='left-nav-pane'>
+            <!-- Logo -->
+            <center><span class='logo'><a href="home.html">ARIMARKET</a></span></center>
+            
+            <nav>
+                <a href="home.html"><span id='nav-link'><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</span></a>
+                <a href="commodities.html"><span id='nav-link'><i class="fa-solid fa-store"></i>&nbsp;&nbsp;&nbsp;&nbsp;Commodities</span></a>
+                <a class='active'><span id='nav-link'><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</span></a>
+                <a href="about.html"><span id='nav-link'><i class="fa-sharp fa-solid fa-circle-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</span></a>
+            </nav>
+    
+            <!-- Toggle Switch -->
+            
+    
+            <div id='widget-nav'>
+                <div id='widget-nav-content'>
+                    <h2>Why Use This App?</h2>
+                    <p>A price prediction system helps buyers make informed decisions by forecasting future commodity prices, allowing them to optimize their purchases and avoid overpaying in a fluctuating market.</p>
+                </div>
+            </div>
+    
+            <div id='widget-theme'>      
+                <div id='widget-nav-label'>
+                    <h1 id ='dark-mode-label'>Dark Mode</h1>   
+                </div>    
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+    
+        </div>
+    
+        </div>
+
+        <!-- Main Content -->
+        <main>          
+
+          <div id='content-single-container'>
+
+                <!-- Contents: arimarket -->
+                <div id='pseudo-nav'>
+
+                </div>
+                
+                <div id='content-center-container'>
+                <!-- Contents: Left -->    
+                    <!-- Left Widget 1: Date and Time -->
+                    <div id='widget-single-column' >
+
+                        <!-- Date -->
+                        <div class="center-container">
+                            <div id="dashboard-left">
+                                <h1>Contact&nbsp;Us!</h1>
+                                <div>Share&nbsp;us&nbsp;your&nbsp;concerns: </div>
+                                
+                                <div id="comment-box">
+                                    <input type="text" id="comment" name="comment" placeholder="Type your concerns here..." />
+                                    
+                                    <div id="send-button">Send</div>
+                                </div>
+                                &nbsp;
+                                <div>You&nbsp;can&nbsp;also&nbsp;email&nbsp;us&nbsp;at: </div>
+
+                               
+                            </div>
+                        </div>
+
+                        <!-- Time -->
+                        
+
+                    </div>                   
+
+                    <div id="particles-js"></div>
+
+                </div>        
+            
+        </main>
+
+    </div>    
+
+<!-- Scripts -->
+<script src="../js/date.js"></script>
+<script src="../js/time.js"></script>
+<script src="../js/dark-mode.js"></script>
+<script src="../js/fetch_data.js"></script>
+<script src="../js/graph/gdp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../js/particles.js"></script>
+<script src="../js/app.js"></script>
+
+</body>
+</html>
+
+<!-- Search Bar
+<div class="search-bar">
+    <div class="search-bar">
+        <i class="fas fa-search search-icon"></i><input type="text" id="search-input" placeholder="Would you like to search something...">
+        <ul id="search-suggestions"></ul>
+    </div>
+</div> -->
