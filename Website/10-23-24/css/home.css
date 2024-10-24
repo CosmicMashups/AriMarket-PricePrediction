@@ -321,6 +321,14 @@ body.dark-mode nav a:hover {
     color: #252d56;
 }
 
+body.dark-mode #main-commodity-row:hover {
+    background-color: #dae7ed;
+}
+
+body.dark-mode #main-commodity-row-specific:hover {
+    background-color: #dae7ed;
+}
+
 /* body.dark-mode ul li {
     background-color: rgba(75, 192, 192, 0.6);
 } */
@@ -694,12 +702,10 @@ input:checked + .slider:before {
 }
 
 #main-commodity-row:hover {
-    width: 1025px;
     background-color: #dae7ed;
 }
 
 #main-commodity-row-specific:hover {
-    width: 1000px;
     background-color: #dae7ed;
 }
 
