@@ -1,0 +1,62 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Targeting the main collapsible list */
+.collapsible-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Collapsible header */
+.collapsible-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.collapsible-header:hover {
+    background-color: #ddd;
+}
+
+/* Collapsible content - initially hidden */
+.collapsible-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+/* Expanded class to animate the content */
+.collapsible.expanded .collapsible-content {
+    max-height: 500px; /* Large enough to fit the content */
+    opacity: 1;
+}
+
+/* Individual list items with rectangle style */
+.collapsible-item {
+    background-color: #f9f9f9; /* Rectangle background */
+    border: 6px solid #ddd;     /* Rectangle border */
+    padding: 10px;
+    margin-bottom: 5px;
+    margin: auto;
+    border-radius: 4px;         /* Rounded corners for rectangle */
+    opacity: 0;                 /* Hidden initially */
+    transform: translateY(-10px); /* Slide effect */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation */
+}
+
+/* Animate sublist items when expanded */
+.collapsible.expanded .collapsible-item {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
