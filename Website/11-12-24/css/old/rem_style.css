@@ -1,0 +1,425 @@
+/* Fonts */
+@import url(
+  'https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;700'
+);
+
+@import url(
+  'https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap'
+);
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('../fonts/LemonMilk.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Body */
+body {
+  font-family: 'Fredoka';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 0.33rem; /* Base font size */
+
+  background-image: url('../images/gradient_background.png');
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000%;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
+  z-index: 50;
+  background-color: #0d1118;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'LemonMilk', sans-serif;
+  font-size: 2rem;
+  /* color: #e7ce8f; */
+  color: #DAA520;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  margin-top: 4.5rem; /* Adjusted from 10vh */
+  background-color: rgb(100, 100, 100);
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 50;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.25rem; /* Adjusted from 2% */
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #191970;
+  color: #f0f0f0;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+}
+
+.left_greeting {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.greeting {
+  font-family: 'Abril Fatface';
+  font-size: 2.25rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 10rem;
+}
+
+/* Displaying current date and time */
+.date-time {
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Abril Fatface';
+}
+
+/* Background animation */
+.container {
+  padding-top: 5rem;
+  height: 100%;
+  width: 100%;
+  /* For Linear Gradient Animation Background */
+  /* background: linear-gradient(45deg, #0A1536, #0D1A4C, #2E0062, #250052); */
+  /* background-size: 300% 300%; */
+  /* animation: color 12s ease-in-out infinite; */
+}
+
+/*
+/* @keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+} */
+
+p {
+  font-size: 1rem; /* Base font size */
+}
+
+/* Price List */
+.price-list {
+  margin-top: 16vh;
+  background-color: #425679;
+  padding: 0;
+  width: 100%;
+  font-size: 1.33rem;
+  color: #dae7ed;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.price-list li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #516689;
+  /* margin: 0.25rem 0; */
+}
+
+.price-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.price-list ul li {
+  margin-right: 0.5rem;
+}
+
+.price-list ul li a {
+  text-decoration: none;
+  color: #dae7ed;
+}
+
+.price-list ul li a:hover {
+  background-color: #86a8ff;
+  color: #f0f0f02e;
+}
+
+/* Price List: Item List */
+.list-logo {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.commodity-logo {
+  max-width: 3.5rem;
+  height: auto;
+}
+
+.commodity-name {
+  flex: 0;
+}
+
+.dot-leaders {
+  flex: 1;
+  border-bottom: 0.33rem dotted #dae7ed;
+  margin: 0 2rem;
+}
+
+.commodity-price {
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
+}
+
+/* Price List: Under the commodity groups */
+.price-list li {
+  cursor: pointer;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.price-list li.active {
+  background-color: #516689;
+  font-weight: bold;
+}
+
+.price-list li.active.details {
+  display: block;
+}
+
+.details {
+  display: none;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.details li {
+  padding-left: 0.5rem;
+}
+
+/* Price List: Animation */
+.price-list li {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Shadow changes when hovering over the list items */
+.price-list li:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1118;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  position: absolute;
+  right: 2rem;
+  align-items: center;
+  z-index: 50;
+  margin-top: -.25rem;
+}
+
+#search-input {
+  color: white;
+  background-color: #516689;
+  padding: 1rem;
+  border: 1px solid #516689;
+  border-radius: 1rem;
+  height: 1rem;
+  width: 12.5rem;
+  font-family: 'Fredoka';
+  padding: 1rem 1rem 1rem 2.5rem;
+}
+
+#search-input::placeholder {
+  color: white;
+}
+
+/* Icon style */
+.search-icon {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 1rem;
+  top: 45%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* Prevent text from overflowing */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10rem;
+}
+
+/* ====================================================================== */
+
+/* COMMODITIES PAGE */
+.main-content {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* Left Panel */
+.left-panel {
+    width: 30%;
+    background-color: #33394D;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    height: 30rem;
+}
+
+.left-panel .item-info {
+    text-align: center;
+}
+
+.item-info img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.item-info h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.price, .expected-range {
+  background-color: #273158;
+  border-radius: 10px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.price{
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.expected-range {
+  padding: .1rem;
+  font-size: 1rem;
+}
+
+.price-left, .price-right,
+.range-left, .range-right {
+  width: 50%;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #607DC1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 70%;
+    padding: 20px;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: #3B4B74;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container: Graph */
+.chart-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #273158;
+    border-radius: 10px;
+}
+
+.chart {
+    display: block;
+    width: 60rem;
+    height: 25rem;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Canvas for Graph */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Graph */
+#lineChart {
+  background-color: #273158;
+  width: 200%;
+  max-width: 100rem;
+  padding: 1rem;
+}
