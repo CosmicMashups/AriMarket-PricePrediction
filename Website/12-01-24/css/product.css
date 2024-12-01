@@ -1,0 +1,173 @@
+/* Fonts */
+@import url(
+  'https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;700'
+);
+
+@import url(
+  'https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap'
+);
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('../fonts/LemonMilk.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Body */
+body {
+  font-family: 'Fredoka';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 0.33rem; /* Base font size */
+
+  background-image: url('../images/gradient_background.png');
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000%;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
+  z-index: 50;
+  background-color: #0d1118;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'LemonMilk', sans-serif;
+  font-size: 2rem;
+  color: #e7ce8f;
+  font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181A1F;
+    color: #E7CE8F;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+} */
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* Left Panel */
+.left-panel {
+    width: 30%;
+    background-color: #516689;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.left-panel .item-info {
+    text-align: center;
+}
+
+.item-info img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.item-info h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.price {
+    background-color: #273158;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.expected-range {
+    background-color: #273158;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #607DC1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 70%;
+    padding: 20px;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: #3B4B74;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chart {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #273158;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d1118;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }

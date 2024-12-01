@@ -1,0 +1,151 @@
+/* Mobile view: Adjust layout for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* COMMODITIES.HTML */
+    #content-single-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px;
+        align-items: center;
+    }
+
+    #widget-single-column {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        margin-top: 7vh;
+        /* margin: 8px 6px; */
+        width: 80vw;
+        padding: 24px;
+        border-radius: 16px;
+
+        font-size: 16px;
+        color: #333333;
+        background-color: #dae7ed;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    /* Container: Progress Bar */
+    #main-commodity-row, #main-commodity-row-specific {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #95afdd;
+        border-radius: 16px;
+        padding: 20px;
+        height: 40px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border: 3px solid #333ba0;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    #main-commodity-row {
+        width: 65vw;
+    }
+
+    #main-commodity-row-specific {
+        width: 60vw;
+    }
+
+    #main-commodity-row:hover, #main-commodity-row-specific:hover {
+        background-color: #dae7ed;
+    }
+
+    .dot-leaders {
+        flex: 1;
+        border-bottom: 0.33rem dotted #203555;
+        margin: 0 2rem;
+    }
+
+    /* == COLLAPSIBLE LIST == */
+    .collapsible-list {
+        list-style: none;
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .collapsible-list li {
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        font-size: 20px;
+        color: #333ba0;
+        overflow: hidden;
+    }
+
+    /* Collapsible Header */
+    .collapsible-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+
+    .collapsible-header:hover {
+        background-color: #ddd;
+    }
+
+    /* Collapsible Content (initially hidden) */
+    .collapsible-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding-left: 20px;
+        border-left: 3px dotted #333ba0;
+        transition: max-height 0.6s ease, opacity 0.6s ease;
+    }
+
+    /* Expanded class to animate the content */
+    .collapsible.expanded .collapsible-content {
+        max-height: 500px; /* Large enough to fit the content */
+        opacity: 1;
+    }
+
+    /* Individual list items with rectangle style */
+    .collapsible-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Animate sublist items when expanded */
+    .collapsible.expanded .collapsible-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .cm-price-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cm-price-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    .cm-price-list li a {
+        text-decoration: none;
+        color: black;
+    }
+}
