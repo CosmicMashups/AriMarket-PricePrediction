@@ -1,0 +1,29 @@
+3.1.1 rules of arima model
+scoring ad feature importnce
+tree voting predictions
+threshold based predictions
+
+3.3 esearch instruments
+data source
+programming framework
+python and its libraries
+machlearn model: 
+- techniques for model optimization
+data preprocessing
+- feature selection
+- class imbalance handling
+- model validation
+
+data collection procedures
+- was carried out yhrough a combibtion of online pltforms
+- data gathering
+- data preprocessing
+- ethical standards
+
+3.5 data analysis 
+- use case diagram
+
+4. results
+4.2. presentation of data
+- quantitative data: the data collected from the performance metrics tat focus on several key aspects
+
