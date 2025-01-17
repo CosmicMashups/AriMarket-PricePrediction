@@ -1,0 +1,84 @@
+ARIMA PARAMETERS AND ITS MEAN ABSOLUTE ERROR
+A. RICE
+1. Regular-Milled Rice
+- High: (25, 1, 0), MAE: 1.598, BIC: 1618.683
+- Low: (22, 0, 19), MAE: 1.913, BIC: 2198.275
+2. Well-Milled Rice
+- High: (24, 0, 4), MAE: 0.616, BIC: 1711.149
+- Low: (27, 0, 2), MAE: 1.810, BIC: 2297.336
+3. Premium Rice
+- High: (6, 1, 10), MAE: 0.784, BIC: 1859.564
+- Low: (7, 1, 27), MAE: 1.243, BIC: 1686.801
+4. Special Rice
+- High: (0, 0, 1), MAE: 1.906, BIC: 1864.011
+- Low: (15, 1, 13), MAE: 1.990, BIC: 1694.064
+
+B. MEAT
+1. Beef Brisket
+- High: (28, 0, 33), MAE: 14.679, BIC: 1566.287
+- Low: (30, 1, 0), MAE: 2.027, BIC: 1480.984
+2. Beef Rump
+- High: (4, 1, 25), MAE: 6.653, BIC: 
+- Low: (27, 1, 1), MAE: 6.887, BIC: 
+3. Whole Chicken
+- High: (39, 0, 46), MAE: 6.136, BIC: 
+- Low: (1, 0, 0), MAE: 8.524, BIC: 
+4. Pork Belly
+- High: (45, 0, 37), MAE: 3.159, BIC: 
+- Low: (35, 0, 0), MAE: 8.524, BIC: 
+5. Pork Ham
+- High: (39, 0, 0), MAE: 3.072, BIC: 
+- Low: (33, 0, 29), MAE: 8.099, BIC: 
+
+C. FISH
+1. Alumahan
+- High: (28, 0, 33), MAE: 13.345, BIC: 
+- Low: (42, 1, 28), MAE: 18.412, BIC: 
+2. Bangus
+- High: (33, 1, 38), MAE: 7.097, BIC: 
+- Low: (33, 1, 45), MAE: 6.870, BIC: 
+3. Galunggong
+- High: (28, 0, 0), MAE: 36.916, BIC: 
+- Low: (28, 1, 0), MAE: 21.244, BIC: 
+4. Tilapia
+- High: (43, 0, 39), MAE: 8.214, BIC: 
+- Low: (29, 1, 0), MAE: 6.826, BIC: 
+
+D. FRUITS
+1. Banana (Lakatan)
+- High: (7, 0, 10), MAE: 5.514, BIC: 
+- Low: (15, 1, 17), MAE: 3.543, BIC: 
+Calamansi
+- High: (29, 0, 36), MAE: 10.540, BIC: 
+- Low: (45, 0, 32), MAE: 14.499, BIC: 
+3. Mango
+- High: (47, 2, 0), MAE: 67.152, BIC: 
+- Low: (49, 0, 0), MAE: 46.159, BIC: 
+4. Papaya
+- High: (31, 1, 34), MAE: 10.665, BIC: 
+- Low: (42, 1, 0), MAE: 6.496, BIC: 
+
+E. VEGETABLES
+1. Cabbage
+- High: (49, 0, 0), MAE: 18.397, BIC: 
+- Low: (49, 0, 49), MAE: 15.607, BIC: 
+2. Carrots
+- High: (31, 0, 30), MAE: 31.790, BIC: 
+- Low: (40, 0, 0), MAE: 30.782, BIC: 
+3. Eggplant
+- High: (31, 1, 39), MAE: 32.902, BIC: 
+- Low: (35, 0, 0), MAE: 30.696, BIC: 
+4. Tomato
+- High: (0, 0, 15), MAE: 55.680, BIC: 
+- Low: (40, 0, 0), MAE: 29.082, BIC: 
+5. Potato
+- High: (47, 1, 32), MAE: 11.102, BIC: 
+- Low: (28, 2, 32), MAE: 14.951, BIC: 
+
+SPICES
+1. Garlic
+- High: (29, 1, 30), MAE: 49.669, BIC: 
+- Low: (31, 2, 0), MAE: 17.611, BIC: 
+2. Red Onion
+- High: (1, 1, 27), MAE: 4.771, BIC: 
+- Low: (5, 1, 11), MAE: 5.219, BIC: 
