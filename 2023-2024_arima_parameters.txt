@@ -1,0 +1,87 @@
+ARIMA MODEL: HIGH PARAMETERS
+RICE 
+Regular-Milled Rice:	21, 1, 28
+Well-Milled Rice:	3, 1, 28
+Premium Rice:		15, 1, 28
+Special Rice:		16, 1, 28
+
+MEAT
+Beef Brisket:		11, 0, 15
+Beef Rump:		24, 1, 28
+Whole Chicken:		3, 0, 28
+Pork Belly:		3, 1, 19
+Pork Ham:		12, 1, 28
+
+FISH
+Alumahan:		23, 1, 22
+Bangus:			2, 1, 28
+Galunggong:		13, 0, 25
+Tilapia:		2, 0, 26
+
+FRUITS
+Banana (Lakatan):	21, 1, 28
+Calamansi: 		15, 1, 21
+Mango:			9, 1, 28
+Papaya:			8, 0, 28
+
+VEGETABLES
+Cabbage: 		24, 1, 28
+Carrots: 		4, 1, 24
+Eggplant: 		8, 0, 13
+Tomato: 		13, 1, 21
+Potato: 		6, 1, 28
+
+SPICE
+Garlic:			4, 1, 28
+Onion:			11, 0, 18
+
+ARIMA MODEL: LOW PARAMETERS
+RICE 
+Regular-Milled Rice:	10, 1, 28
+Well-Milled Rice:	14, 1, 28
+Premium Rice:		7, 1, 28
+Special Rice:		3, 0, 28
+
+MEAT
+Beef Brisket:		14, 1, 28
+Beef Rump:		27, 1, 28
+Whole Chicken:		15, 1, 28
+Pork Belly:		13, 1, 28
+Pork Ham:		11, 1, 28
+
+FISH
+Alumahan:		11, 1, 28
+Bangus:			3, 1, 28
+Galunggong:		24, 1, 23
+Tilapia:		26, 0, 25
+
+FRUITS
+Banana (Lakatan):	28, 1, 28
+Calamansi: 		10, 1, 18
+Mango:			13, 1, 23
+Papaya:			18, 0, 28
+
+VEGETABLES
+Cabbage: 		17, 1, 24
+Carrots: 		17, 1, 23
+Eggplant: 		9, 0, 10
+Tomato: 		25, 1, 20
+Potato: 		4, 1, 28
+
+SPICE
+Garlic:			3, 1, 26
+Onion:			15, 0, 22
+
+
+
+rice = ['rice', 'regular_milled_rice', 'well_milled_rice', 'premium_rice', 'special_rice']
+
+meat = ['meat', 'beef_brisket', 'beef_rump', 'whole_chicken', 'pork_belly', 'pork_ham']
+
+fish = ['fish', 'alumahan', 'bangus', 'galunggong', 'tilapia']
+
+fruits = ['fruits', 'banana_lakatan', 'calamansi', 'mango', 'papaya']
+
+vegetables = ['vegetables', 'cabbage', 'carrots', 'eggplant', 'tomato', 'potato']
+
+spices = ['spices', 'red_onion', 'garlic']
