@@ -1,0 +1,341 @@
+#top-nav-bar {
+    display: none;
+}
+
+#pseudo-top-nav {
+    display: none;
+}
+
+#left-nav-label {
+    display: none;
+}
+
+/* Mobile view: Adjust layout for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    /* Hide left navigation pane */
+    #left-nav-pane {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        top: 0;
+        left: 0;
+        height: 95vh;
+        width: 50vw;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        pointer-events: auto;
+    }
+    
+    /* When the pane is shown */
+    #left-nav-pane.active {
+        transform: translateX(0);
+        opacity: 1;
+    }    
+
+    #left-nav-pane #logo {
+        display: None;
+    }
+
+    /* Menu: Logo */
+    #logo_open_nav {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-family: 'LemonMilk', sans-serif;
+        font-size: 32px;
+        color: #203555;
+        font-weight: bold;
+        align-items: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Menu: Logo */
+    #left-nav-label {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-family: 'LemonMilk', sans-serif;
+        font-size: 32px;
+        color: #203555; 
+        font-weight: bold;
+        align-items: center;
+    }
+
+    #top-nav-bar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 5vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 20px;
+        border-radius: 16px;
+
+        color: #333333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        background: linear-gradient(45deg, #a9bdfb, #d9dffe, #dae7ed);
+        z-index: 4;
+    }
+
+    #nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+        display: none;
+        z-index: 5;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    #nav-overlay.active {
+        display: block; /* Show overlay when nav pane is active */
+        opacity: 1;
+    }
+
+    #pseudo-top-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 5vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    /* Change layout to a single column */
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Flex alignment for easier column layout */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        width: 100vw;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Containers */
+    #content-left, #content-right {
+        /* Adjust content containers to cover full width */
+        width: 90vw;
+        padding: 12px;
+        box-sizing: border-box;
+
+        /* Align content vertically and horizontally */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+
+    #content-left {
+        width: 90vw;
+        margin: 12px 0px 0px 0px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+    
+    #content-right {
+        width: 90vw;
+        margin: 0px 0px 12px 0px;
+        padding: 12px; 
+        box-sizing: border-box;
+    }
+
+    /* Widgets */
+    #widget-column, #widget-row {
+        display: flex;
+        justify-content: space-between;
+
+        margin: 8px 0px;
+        width: 80vw;
+        padding: 24px;
+        border-radius: 16px;
+
+        font-size: 16px;
+    }
+
+    #widget-column {
+        flex-direction: column;
+    }
+
+    #widget-row {
+        margin: 4px 0px;
+    }
+
+    /* Center pseudo-nav if used */
+    #pseudo-nav {
+        display: None;
+    }
+
+    /* Date & Time: Display */
+    .date-time {
+        text-align: left;
+        font-size: 3vw;
+    }
+
+    /* Home: General Price List, Commodities: Main Price List */
+    #gen-price-list {
+        display: flex;
+        width: 75vw;
+        height: 61.5vh;
+    }
+
+    #gen-price-list, #main-price-list {
+        padding: 10px;
+        margin: 8px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #95afdd rgba(224, 224, 224, 0.6);
+    }
+
+    /* Container: Progress Bar */
+    #commodity-row {
+        width: 63vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e0e0e0;
+        border-radius: 16px;
+        padding: 20px;
+        height: 40px;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    #commodity-percentage {            
+        background-color: #95afdd; 
+        z-index: -1;
+        clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+        animation: fill 2s ease-out forwards;
+    }
+
+    @keyframes fill {
+        from {
+            width: 0;
+        }
+        to {
+            width: 62%;
+        }
+    }
+    
+    /* Colored: Progress Bar */
+    #commodity-percentage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #95afdd;
+        border-radius: 10px 0 0 10px;
+        z-index: 0;
+    }
+
+    /* Commodity Buttons */
+    #commodity-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 10px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #commodity-button {
+        height: 15vh;
+        width: 20vw;
+        margin: 0px;
+        padding: 8px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        border-radius: 16px;
+        background-color: #95afdd; 
+        border: 2px solid #333ba0;
+    
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .commodity-button-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 10px;
+        width: 7.5vw;
+        height: 7.5vh;
+        margin-bottom: 0px;
+    }
+    
+    .commodity-button-icon-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .commodity-button-label {
+        margin: 16px;
+        font-size: 2.5vw;
+        text-align: center;
+        color: #203555;
+    }
+
+    /* Dark Mode */
+    body.dark-mode #top-nav-bar {
+        background: linear-gradient(-45deg, #0a1432, #252d56, #324565);
+        color: #EDEDED; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    }   
+
+    body.dark-mode #left-nav-label, body.dark-mode #logo_open_nav {
+        color: #DAE7ED; 
+    }
+}

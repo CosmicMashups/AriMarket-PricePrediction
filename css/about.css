@@ -1,0 +1,619 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;700');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('../fonts/LemonMilk.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../fonts/Digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTInstitute';
+    src: url('../fonts/LTInstitute.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'LTInstitute', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    /* background: #EDEDEE; */
+    background-image: url('../images/gradient_background.png');    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #203555; 
+    overflow-x: hidden;
+}
+
+/* Logo */
+#logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'LemonMilk', sans-serif;
+    font-size: 32px;
+    color: #203555; 
+    font-weight: bold;
+    align-items: center;
+}
+
+/* Headings */
+h1, h2, h3 {    
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraph */
+p {    
+    font-family: 'Nunito', sans-serif;
+}
+
+/* DIV */
+#container {
+    display: flex;
+    max-height: 2000px;
+    justify-content: space-between;
+}
+
+/* Links */
+a {
+    text-decoration: None;
+    color: #203555; 
+}
+
+#left-nav-pane {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+    width: 250px;
+    margin: 0px;
+    padding: 20px;
+    color: #333333;
+
+    z-index: 10;
+
+    /* background-color: #77a4f2;  */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    /* For Linear Gradient Animation Background */
+    background: linear-gradient(45deg, #a9bdfb, #d9dffe, #dae7ed);
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    margin: 0px 8px 8px 8px;
+    color: #333333; 
+}
+
+#pseudo-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px;
+}
+
+#content-left, #content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 580px;
+    margin: 0px 6px 6px 6px;
+    padding: 4px;
+    color: #203555;
+}
+
+/* Navigation Pane */
+nav {
+    margin: 32px 8px 8px 8px;
+    flex-grow: 1;
+}
+
+#nav-icon {
+    padding: 0 0 0 20px;
+    color: #333333; 
+}
+
+#nav-link {
+    padding: 0 0 0 20px;
+}
+
+nav a {
+    margin: 7px 0px;
+    text-align: justify;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #203555; 
+    display: block;
+    transition: 0.4s;
+}
+
+nav a:hover, nav a #nav-icon:hover {
+    background-color: #5d5d9ebe;
+    border-radius: 32px;
+    color: #dae7ed;
+}
+
+nav a.active {
+    background-color: #1C1C27;
+    border-radius: 32px;
+    color: #e7ce8f;
+    
+}
+
+nav a.active #nav-icon {
+    color: #e7ce8f; 
+}
+
+#widget-nav, #widget-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4px 0px;
+    width: 85%;
+    padding: 16px;
+    border-radius: 16px;
+
+    font-size: 12px;
+    color: #333333;
+    background-color: rgb(200, 209, 254);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#widget-nav {
+    flex-direction: column;
+}
+
+/* Dark Mode: Styles */
+body.dark-mode {
+    background: #10101a;
+    color: #EDEDED; 
+}
+
+body.dark-mode a {
+    color: #e7ce8f;
+}
+
+body.dark-mode #logo {
+    color: #DAE7ED; 
+}
+
+body.dark-mode #left-nav-pane {
+    background: linear-gradient(-45deg, #0a1432, #252d56, #324565);
+    color: #EDEDED; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+body.dark-mode #widget-nav {
+    color: #252d56;
+}
+
+body.dark-mode main {
+    color: #EDEDED; 
+}
+
+body.dark-mode #content-left,
+body.dark-mode #content-right {
+    color: #EDEDED; 
+}
+
+body.dark-mode .slider {
+    background-color: #333333;
+}
+
+body.dark-mode #widget-row {
+    background-color: #252d56; 
+    color: #EDEDED; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+body.dark-mode #widget-column {
+    background-color: #252d56; 
+    color: #EDEDED; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+body.dark-mode #widget-single-column {
+    background-color: #252d56; 
+    color: #EDEDED; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+body.dark-mode #dashboard-left, #dashboard-right {   
+    color: #DAE7ED;
+}
+
+body.dark-mode #nav-icon {
+    color: #e7ce8f; 
+}
+
+body.dark-mode nav a {
+    color: #e7ce8f; 
+}
+
+body.dark-mode nav a.active {
+    background-color: #F1F1F1;
+    color: #1C1C27;
+}
+
+body.dark-mode nav a.active #nav-icon {
+    color: #1C1C27; 
+}
+
+body.dark-mode #search-input {
+    color: white; 
+    background-color: #516689; 
+    border: 1px solid #516689;
+}
+
+body.dark-mode #search-input::placeholder {
+    color: white; 
+}
+
+body.dark-mode #time-container, body.dark-mode #time-display {
+    color: #dae7ed;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #dcd3ffb5;
+    border-radius: 32px;
+    color: #252d56;
+}
+
+body.dark-mode #main-commodity-row:hover {
+    background-color: #dae7ed;
+}
+
+body.dark-mode #main-commodity-row-specific:hover {
+    background-color: #dae7ed;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    align-self: flex-end;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DAA520;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider:before {
+    position: absolute;
+    content: '\f185'; 
+    font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    color: #DAA520;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #333ba0;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    content: '\f186';
+    font-size: 16px;
+    color: #333ba0;
+}
+
+/* Particles.js */
+#particles-js {
+    height: 100%;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Widgets */
+#content-single-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 2px 64px 2px;
+}
+
+#widget-with-mascot {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 220vh;
+}
+
+#widget-single-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 8px 6px;
+    width: 74vw;
+    height: 400vh;
+    overflow: hidden;
+    padding: 24px;
+    border-radius: 30px;
+
+    font-size: 16px;
+    color: #333333;
+    background-color: #dae7ed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#mascot-model {
+    z-index: 3;
+    margin-bottom: -35vh;
+}
+
+#mascot-img {
+    width: auto;
+    height: 90vh;
+}
+
+.dot-leaders {
+    flex: 1;
+    border-bottom: 0.33rem dotted #203555;
+    margin: 0 2rem;
+}
+
+#content-center-container {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    align-items: center;
+    height: 98vh;   
+    width: 79vw;
+}
+
+#welcome-arimarket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center; /* Centers text horizontally */
+    margin: 4px 16px;
+    width: fit-content; /* Adjusts width to fit content */
+    font-size: 40px; /* Keeps text on a single line */
+    font-family: "LemonMilk";
+    color: #14102e;
+
+    word-wrap: break-word; /* Allows the heading text to wrap */
+    overflow-wrap: break-word; /* Ensures words wrap to a new line */
+    white-space: normal; /* Allows text to break into multiple lines */
+}
+
+#about-header {
+    z-index: 4;
+    text-shadow: 
+                 -1px -1px 0 #dae7ed,   /* Top-left shadow */
+                 1px -1px 0 #dae7ed,   /* Top-right shadow */
+                 -1px  1px 0 #dae7ed,   /* Bottom-left shadow */
+                 1px  1px 0 #dae7ed,  /* Bottom-right shadow */
+                 -2px -2px 0 #dae7ed,   /* Top-left shadow */
+                 2px -2px 0 #dae7ed,   /* Top-right shadow */
+                 -2px  2px 0 #dae7ed,   /* Bottom-left shadow */
+                 0 0 8px rgba(32, 53, 85, 0.6), /* Subtle glow */
+                 0 0 12px rgba(32, 53, 85, 0.4), /* Medium glow */
+                 0 0 20px rgba(32, 53, 85, 0.3), /* Outer glow */
+                 0 0 30px rgba(32, 53, 85, 0.1); /* Distant glow */
+}
+
+#faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+#ari {
+    padding: 0;
+    margin: 0;
+    color: #333ba0;
+    display: inline;
+    font-size: 40px;
+    font-family: "LemonMilk" ;
+}
+
+#arima {
+    padding: 0;
+    margin: 0;
+    color: #333ba0;
+    display: inline;
+    font-size: 30px;
+    font-family: "LemonMilk" ;
+}
+
+#ph, #mm {
+    padding: 0;
+    margin: 0;
+    color: #4c43f5;
+    display: inline;
+    font-family: "Nunito";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* #mm {
+    padding: 0;
+    margin: 0;
+    color: #333ba0;
+    display: inline;
+    font-family: "Nunito";
+    font-size: 15px;
+    font-weight: bold;
+} */
+
+#predicting {
+    padding: 0;
+    margin: 0;
+    color: #333ba0;
+    font-size: 18px;
+    font-family: "Nunito";
+    text-align: center;
+    display: block; 
+    font-weight: bold;
+}
+
+.custom-hr{
+    border: none;
+    border-top: 4px dotted #4c43f5; 
+    width: 69vw;             
+    margin: 20px auto;
+    transform: scaleY(1); 
+}
+
+#how-do-i-use-arimarket {
+    position: relative;
+    text-align: left;
+    margin-top: 20px; /* Adds some space above the section */
+    width: 100%;
+    font-size:30px;
+}
+
+#subtext-description {
+    font-family: "Nunito";
+    font-size: 15px;
+    text-align: justify;
+    word-wrap: break-word;
+    margin: 2vh 0vh;
+    overflow-wrap: break-word;
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; */
+    
+    /* Additional fallback for other browsers */
+    white-space: normal;
+}
+
+/* DARK MODE */
+body.dark-mode #predicting,
+body.dark-mode #ari, body.dark-mode #arima,
+body.dark-mode #ph, body.dark-mode #mm {
+    color: #E7CE8F;
+}
+
+body.dark-mode .custom-hr{
+    border-top: 4px dotted #E7CE8F; 
+}
+
+body.dark-mode .dot-leaders {
+    flex: 1;
+    border-bottom: 0.33rem dotted #203555;
+    margin: 0 2rem;
+}
+
+body.dark-mode #about-header {
+    z-index: 4;
+    text-shadow: 
+                 -1px -1px 0 #203555,   /* Top-left shadow */
+                 1px -1px 0 #203555,   /* Top-right shadow */
+                 -1px  1px 0 #203555,   /* Bottom-left shadow */
+                 1px  1px 0 #203555,  /* Bottom-right shadow */
+                 -2px -2px 0 #203555,   /* Top-left shadow */
+                 2px -2px 0 #203555,   /* Top-right shadow */
+                 -2px  2px 0 #203555,   /* Bottom-left shadow */
+                 2px  2px 0 #203555,  /* Bottom-right shadow */
+                 0 0 8px rgba(255, 255, 255, 0.6), /* Subtle glow */
+                 0 0 12px rgba(255, 255, 255, 0.4), /* Medium glow */
+                 0 0 20px rgba(255, 255, 255, 0.3), /* Outer glow */
+                 0 0 30px rgba(255, 255, 255, 0.1); /* Distant glow */
+}
+
+body.dark-mode #welcome-arimarket{        
+    color: #DAE7ED;
+}
+
+#main-icon {
+    width: 150px;
+    height: 150px;
+    
+    margin: 0;
+    padding: 0;
+}
